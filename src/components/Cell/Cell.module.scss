@@ -1,0 +1,89 @@
+@use '../../assets/scss/veriables';
+
+.cell{
+  width: 50px;
+  height: 50px;
+  border: 5px solid;
+  border-top-color: veriables.$border-color-light;
+  border-left-color: veriables.$border-color-light;
+  border-right-color: veriables.$border-color-dark;
+  border-bottom-color: veriables.$border-color-dark;
+  background-color: veriables.$background-color;
+
+  &-empty{
+    cursor: auto;
+    border: 2px solid veriables.$border-color-dark;
+  }
+
+  &-bomb, &-bomb-detonation, &-flag, &-question{
+    cursor: auto;
+	 background-position: center;
+	 background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &-bomb{
+	 background-image: url("../../assets/image/bomb.png");
+	 border: 2px solid veriables.$border-color-dark;
+  }
+
+  &-bomb-detonation{
+	 background-image: url("../../assets/image/boom.png");
+	 border: 2px solid veriables.$border-color-dark;
+  }
+
+  &-flag{
+	 background-image: url("../../assets/image/flag.png");
+  }
+
+  &-question{
+	 background-image: url("../../assets/image/question.png");
+  }
+
+  &-number{
+
+	 &-1, &-2, &-3, &-4, &-5, &-6, &-7, &-8{
+      cursor: auto;
+      background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+      border: 2px solid veriables.$border-color-dark;
+    }
+
+    &-1{
+		background-image: url("../../assets/image/1.png");
+    }
+
+    &-2{
+		background-image: url("../../assets/image/2.png");
+    }
+
+    &-3{
+		background-image: url("../../assets/image/3.png");
+    }
+
+    &-4{
+		background-image: url("../../assets/image/4.png");
+    }
+
+    &-5{
+		background-image: url("../../assets/image/5.png");
+    }
+
+    &-6{
+		background-image: url("../../assets/image/6.png");
+    }
+
+    &-7{
+		background-image: url("../../assets/image/7.png");
+    }
+    
+    &-8{
+		background-image: url("../../assets/image/8.png");
+    }
+  }
+
+  &:hover{
+    background-color: veriables.$background-color-hover;
+  }
+}

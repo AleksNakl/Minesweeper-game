@@ -1,0 +1,19 @@
+@use '../../assets/scss/veriables';
+
+.board{
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 40px 20px veriables.$board-box-shadow;
+
+  &-bomb-detonation{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 40px 20px veriables.$board-box-shadow-gameover;
+  }
+
+  &-win{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 40px 20px veriables.$board-box-shadow-victory;
+  }
+}
