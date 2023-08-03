@@ -1,0 +1,27 @@
+@use '../../assets/scss/veriables';
+
+.wrapper{
+  display: flex;
+  border: 5px solid;
+  border-top-color: veriables.$border-color-dark;
+  border-left-color: veriables.$border-color-dark;
+  border-right-color: veriables.$border-color-light;
+  border-bottom-color: veriables.$border-color-light;
+  background-color: veriables.$background-color;
+}
+
+.BombCount{
+  padding: 0 5px;
+  font-family: 'digital-7', "Arial", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: veriables.$text-color;
+}
+
+.icon{
+  width: 46px;
+  height: 46px;
+  background-image: url("../../assets/image/bomb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}

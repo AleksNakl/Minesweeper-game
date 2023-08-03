@@ -1,0 +1,28 @@
+@use '../../assets/scss/veriables';
+
+.Button {
+  padding: 10px;
+  font-family:cursive;
+  font-size: 20px;
+  font-weight: 500;
+  color: veriables.$text-color;
+  border: 5px solid;
+  border-top-color: veriables.$border-color-light;
+  border-left-color: veriables.$border-color-light;
+  border-right-color: veriables.$border-color-dark;
+  border-bottom-color: veriables.$border-color-dark;
+  background-color: veriables.$background-color;
+
+  &:hover {
+    background-color: veriables.$background-color-hover;
+    text-decoration: underline;
+  }
+
+  &:active{
+	 border: 5px solid;
+    border-top-color: veriables.$border-color-dark;
+    border-left-color: veriables.$border-color-dark;
+    border-right-color: veriables.$border-color-light;
+    border-bottom-color: veriables.$border-color-light;
+  }
+}
