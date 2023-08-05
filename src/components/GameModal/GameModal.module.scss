@@ -1,0 +1,101 @@
+@use '../../assets/scss/veriables';
+
+.gameModal{
+  padding: 20px;
+  position: absolute;
+  right: calc(50% - 200px);
+  top: calc(50% - 200px);;
+  width: 400px;
+  height: 220px;
+  border: 5px solid;
+  border-top-color: veriables.$border-color-light;
+  border-left-color: veriables.$border-color-light;
+  border-right-color: veriables.$border-color-dark;
+  border-bottom-color: veriables.$border-color-dark;
+  background-color: veriables.$background-color;
+}
+
+.title{
+  font-family:cursive;
+  font-size: 25px;
+  font-weight: 500;
+  color: veriables.$text-color;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.gameModal-btn {
+  bottom: 20px;
+  left: 20px;
+  position: absolute;
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 10px;
+  font-family:cursive;
+  font-size: 20px;
+  font-weight: 400;
+  color: veriables.$text-color;
+  border: 5px solid;
+  border-top-color: veriables.$border-color-light;
+  border-left-color: veriables.$border-color-light;
+  border-right-color: veriables.$border-color-dark;
+  border-bottom-color: veriables.$border-color-dark;
+  background-color: veriables.$background-color;
+  
+  &:hover {
+	 background-color: veriables.$background-color-hover;
+    text-decoration: underline;
+  }
+/* 
+  &:disabled {
+    cursor: default;
+    border: 5px solid veriables.$border-color-dark;
+  }
+*/
+  &:active{
+    border: 5px solid;
+    border-top-color: veriables.$border-color-dark;
+    border-left-color: veriables.$border-color-dark;
+    border-right-color: veriables.$border-color-light;
+    border-bottom-color: veriables.$border-color-light;
+  }
+}
+
+.gameModal-btn-close {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  padding: 5px 10px;
+  font-family:cursive;
+  font-size: 20px;
+  font-weight: 400;
+  color: veriables.$text-color-x;
+  border: 5px solid;
+  border-top-color: veriables.$border-color-light;
+  border-left-color: veriables.$border-color-light;
+  border-right-color: veriables.$border-color-dark;
+  border-bottom-color: veriables.$border-color-dark;
+  background-color: veriables.$background-color;
+
+  &:hover {
+	 background-color: veriables.$background-color-hover;
+    color: veriables.$text-color;
+  }
+  
+  &:active{
+	 border: 5px solid;
+	 border-top-color: veriables.$border-color-dark;
+	 border-left-color: veriables.$border-color-dark;
+	 border-right-color: veriables.$border-color-light;
+	 border-bottom-color: veriables.$border-color-light;
+  }
+}
+
+.statistics{
+  font-family:cursive;
+  font-size: 20px;
+  font-weight: 500;
+  color: veriables.$text-color;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}

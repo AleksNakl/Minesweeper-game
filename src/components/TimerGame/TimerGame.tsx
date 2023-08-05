@@ -1,10 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+import { getMinesweeperState, setFinishTime } from '../../store/minesweeperSlice';
+import { useAppDispatch, useAppSelector } from '../../hooks';
 
 import classes from './TimerGame.module.scss';
 
 const TimerGame: React.FC = () => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const dispatch = useAppDispatch();
+  const { timerIndicator } = useAppSelector(getMinesweeperState);
   const [timerData, setTimerData] = useState(0);
+
+  useEffect(() => {
+    let timerId: number;
+    if (timerIndicator) {
+      timerId = window.setInterval(() => {
+        setTimerData((timerDataNow) => timerDataNow + 1);
+      }, 1000);
+    } else {
+      dispatch(setFinishTime(timerData));
+      setTimerData(0);
+    }
+
+    return () => {
+      window.clearInterval(timerId);
+    };
+  }, [timerIndicator, setTimerData, dispatch]);
 
   return (
     <div className={classes.wrapper}>

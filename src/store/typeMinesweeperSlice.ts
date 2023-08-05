@@ -6,6 +6,11 @@ export type TsettingsValue = {
 };
 
 export type IinitialState = {
+  settingsModal: boolean;
   gameIndicator: string;
+  gameModal: boolean;
+  bombCount: number;
+  timerIndicator: boolean;
+  finishTime: number;
   settingsValue: TsettingsValue;
 };

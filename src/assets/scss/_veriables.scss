@@ -1,9 +1,21 @@
 //colors
-$text-color: black; // цвет текста
+$board-box-shadow: #403e3e; // цвет тени игровой доски
+$board-box-shadow-victory: green; // цвет тени игровой доски
+$board-box-shadow-gameover: red; // цвет тени игровой доски
 $border-color-light: #dddddd; // цвет рамки у ячейки (левая, верх)
 $border-color-dark: #5c5c5c; // цвет рамки у ячейки (правая, низ)
 $background-color: gray; // цвет фона у ячеек у кнопок и модалок
 $background-color-hover: rgb(117, 115, 115); // цвет фона у ячеек и кнопок
-$board-box-shadow: #403e3e; // цвет тени игровой доски
-$board-box-shadow-gameover: red; // цвет тени игровой доски
-$board-box-shadow-victory: green; // цвет тени игровой доски
+$text-color: black; // цвет текста
+$text-color-x: white; // цвет крестика
+$radio-color: black; // цвет радио кнопок
+$settings-background-color: white; // цветa фона полей ввода ширины высоты и кол-ва бомб
+$settings-background-color-disabled: rgb(150, 150, 150); // цветa фона полей ввода ширины высоты и кол-ва бомб
+
+//size
+$font-size-digital: 5vw; //40px размер цифрового шрифта
+$font-size: 2.5vw; //20px размер шрифта
+$border-size: 0.625vw; //5px размер рамки
+$border-size-opened-cell: 0.25vw; //2px размер рамки
+
+$size-cell: 6.25vw; //50px размер ячейки
